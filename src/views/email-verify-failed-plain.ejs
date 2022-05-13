@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification Successful</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<style>
+   
+    body {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://www.comicaisle.com/assets/images/background.jpeg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+    .card-container {
+        /* width: 400px;
+        height: 400px; */
+        background: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10em #F8F200;
+        padding: 5%;
+        /* min-height: 50vh; */
+        min-width: 300px;
+        padding-bottom: 50px;
+    }
+    .card-container > .card-logo {
+        text-align: center;
+        
+    }
+    .card-container > .card-logo img {
+        margin-top: 10px;
+        width: 100px;
+    }
+    .card-container > .card-heading {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+    }
+    .card-container > .card-actions {
+        text-align: center;
+        color: #000;
+        
+    }
+    .card-container > .card-actions > .btn {
+        padding: 10px 20px;
+        font-family: 'Nunito', sans-serif;
+        background: #F8F200;
+        border: 0px;
+        font-size: large;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+    <div class="card-container">
+        <div class="card-logo">
+            <img src="https://www.comicaisle.com/assets/logo-color.png" alt="" srcset="">
+        </div>
+        <div class="card-heading">
+            <h2>Opps</h2>
+            <p><%= errorMessage %></p>
+        </div>
+        <div class="card-actions">
+            <br>
+            <a href="https://www.comicaisle.com/auth/login" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+</body>
+</html>
